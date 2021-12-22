@@ -1,5 +1,13 @@
-# cloud.google.com/go v0.65.0
+# cloud.google.com/go v0.75.0
+cloud.google.com/go
 cloud.google.com/go/compute/metadata
+cloud.google.com/go/iam
+cloud.google.com/go/internal
+cloud.google.com/go/internal/optional
+cloud.google.com/go/internal/trace
+cloud.google.com/go/internal/version
+# cloud.google.com/go/storage v1.14.0
+cloud.google.com/go/storage
 # contrib.go.opencensus.io/exporter/jaeger v0.2.1
 ## explicit
 contrib.go.opencensus.io/exporter/jaeger
@@ -91,7 +99,7 @@ github.com/golang/protobuf/ptypes/timestamp
 github.com/golang/protobuf/ptypes/wrappers
 # github.com/google/btree v1.0.0
 github.com/google/btree
-# github.com/google/go-cmp v0.5.3
+# github.com/google/go-cmp v0.5.4
 github.com/google/go-cmp/cmp
 github.com/google/go-cmp/cmp/internal/diff
 github.com/google/go-cmp/cmp/internal/flags
@@ -104,12 +112,16 @@ github.com/google/gofuzz/bytesource
 # github.com/google/uuid v1.2.0
 ## explicit
 github.com/google/uuid
+# github.com/googleapis/gax-go/v2 v2.0.5
+github.com/googleapis/gax-go/v2
 # github.com/googleapis/gnostic v0.5.4
 ## explicit
 github.com/googleapis/gnostic/compiler
 github.com/googleapis/gnostic/extensions
 github.com/googleapis/gnostic/jsonschema
 github.com/googleapis/gnostic/openapiv2
+# github.com/googleapis/google-cloud-go-testing v0.0.0-20200911160855-bcd43fbb19e8
+github.com/googleapis/google-cloud-go-testing/storage/stiface
 # github.com/gorilla/handlers v1.5.1
 ## explicit
 github.com/gorilla/handlers
@@ -164,6 +176,10 @@ github.com/inconshreveable/mousetrap
 # github.com/json-iterator/go v1.1.10
 ## explicit
 github.com/json-iterator/go
+# github.com/jstemmer/go-junit-report v0.9.1
+github.com/jstemmer/go-junit-report
+github.com/jstemmer/go-junit-report/formatter
+github.com/jstemmer/go-junit-report/parser
 # github.com/kr/text v0.2.0
 ## explicit
 # github.com/magiconair/properties v1.8.1
@@ -203,9 +219,10 @@ github.com/skratchdot/open-golang/open
 # github.com/soheilhy/cmux v0.1.4
 ## explicit
 github.com/soheilhy/cmux
-# github.com/spf13/afero v1.5.1
+# github.com/spf13/afero v1.7.0
 ## explicit
 github.com/spf13/afero
+github.com/spf13/afero/gcsfs
 github.com/spf13/afero/mem
 # github.com/spf13/cast v1.3.0
 github.com/spf13/cast
@@ -237,8 +254,19 @@ github.com/uber/jaeger-client-go/thrift-gen/zipkincore
 ## explicit
 go.opencensus.io
 go.opencensus.io/internal
+go.opencensus.io/internal/tagencoding
+go.opencensus.io/metric/metricdata
+go.opencensus.io/metric/metricproducer
+go.opencensus.io/plugin/ochttp
+go.opencensus.io/plugin/ochttp/propagation/b3
+go.opencensus.io/resource
+go.opencensus.io/stats
+go.opencensus.io/stats/internal
+go.opencensus.io/stats/view
+go.opencensus.io/tag
 go.opencensus.io/trace
 go.opencensus.io/trace/internal
+go.opencensus.io/trace/propagation
 go.opencensus.io/trace/tracestate
 # go.uber.org/atomic v1.7.0
 go.uber.org/atomic
@@ -253,13 +281,15 @@ go.uber.org/zap/internal/bufferpool
 go.uber.org/zap/internal/color
 go.uber.org/zap/internal/exit
 go.uber.org/zap/zapcore
-# golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
-## explicit
+# golang.org/x/crypto v0.0.0-20211108221036-ceb1ce70b4fa
 golang.org/x/crypto/ssh/terminal
-# golang.org/x/mod v0.3.0
+# golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5
+golang.org/x/lint
+golang.org/x/lint/golint
+# golang.org/x/mod v0.4.1
 golang.org/x/mod/module
 golang.org/x/mod/semver
-# golang.org/x/net v0.0.0-20201110031124-69a78807bb2b
+# golang.org/x/net v0.0.0-20210226172049-e18ecbb05110
 golang.org/x/net/context
 golang.org/x/net/context/ctxhttp
 golang.org/x/net/http/httpguts
@@ -268,23 +298,26 @@ golang.org/x/net/http2/hpack
 golang.org/x/net/idna
 golang.org/x/net/internal/timeseries
 golang.org/x/net/trace
-# golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
-## explicit
+# golang.org/x/oauth2 v0.0.0-20210218202405-ba52d332ba99
 golang.org/x/oauth2
 golang.org/x/oauth2/google
+golang.org/x/oauth2/google/internal/externalaccount
 golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
-# golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
+# golang.org/x/sync v0.0.0-20201207232520-09787c993a3a
 ## explicit
 golang.org/x/sync/errgroup
 golang.org/x/sync/semaphore
-# golang.org/x/sys v0.0.0-20201119102817-f84b799fce68
-## explicit
+# golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1
+golang.org/x/sys/execabs
 golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/plan9
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/text v0.3.3
+# golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1
+golang.org/x/term
+# golang.org/x/text v0.3.4
 golang.org/x/text/cases
 golang.org/x/text/collate
 golang.org/x/text/internal
@@ -300,7 +333,7 @@ golang.org/x/text/unicode/norm
 # golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
 ## explicit
 golang.org/x/time/rate
-# golang.org/x/tools v0.0.0-20201121010211-780cb80bd7fb
+# golang.org/x/tools v0.1.0
 ## explicit
 golang.org/x/tools/cmd/goimports
 golang.org/x/tools/go/ast/astutil
@@ -321,10 +354,23 @@ golang.org/x/tools/internal/typesinternal
 # golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
 golang.org/x/xerrors
 golang.org/x/xerrors/internal
-# google.golang.org/api v0.30.0
+# google.golang.org/api v0.40.0
+google.golang.org/api/googleapi
+google.golang.org/api/googleapi/transport
+google.golang.org/api/internal
+google.golang.org/api/internal/gensupport
+google.golang.org/api/internal/impersonate
+google.golang.org/api/internal/third_party/uritemplates
+google.golang.org/api/iterator
+google.golang.org/api/option
+google.golang.org/api/option/internaloption
+google.golang.org/api/storage/v1
 google.golang.org/api/support/bundler
+google.golang.org/api/transport/cert
+google.golang.org/api/transport/http
+google.golang.org/api/transport/http/internal/propagation
+google.golang.org/api/transport/internal/dca
 # google.golang.org/appengine v1.6.7
-## explicit
 google.golang.org/appengine
 google.golang.org/appengine/internal
 google.golang.org/appengine/internal/app_identity
@@ -335,9 +381,12 @@ google.golang.org/appengine/internal/modules
 google.golang.org/appengine/internal/remote_api
 google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/urlfetch
-# google.golang.org/genproto v0.0.0-20201022181438-0ff5f38871d5
-## explicit
+# google.golang.org/genproto v0.0.0-20210226172003-ab064af71705
+google.golang.org/genproto/googleapis/api/annotations
+google.golang.org/genproto/googleapis/iam/v1
+google.golang.org/genproto/googleapis/rpc/code
 google.golang.org/genproto/googleapis/rpc/status
+google.golang.org/genproto/googleapis/type/expr
 # google.golang.org/grpc v1.35.0
 ## explicit
 google.golang.org/grpc
